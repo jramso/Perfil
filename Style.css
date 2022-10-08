@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity:0.9;
+    background: rgba(0, 0, 0, .3);
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1%;
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    justify-content: space-between;
+    background-color: midnightblue;
+}
+
+#nav{
+    display: flex;
+    font-family:system-ui, Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-image: ("tech.jpg") no-repeat center center;
+    opacity: 0.8;
+    background-size: cover;
+    height: 92vh;
+}
+
+#header{
+    display: flex;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+}
+
+#menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+#menu a{
+    display: block;
+    padding: 1rem;
+}
+
+#mobile-menu{
+    display: none;
+    cursor:pointer;
+}
+
+#mobile-menu div{
+    
+    width: 32px;
+    height: 2px;
+    background: whitesmoke;
+    margin: 8px;
+}
+
+@media (max-width:999px) {
+    body{
+        overflow-x: hidden;
+    }
+    #nav-list{
+        position:absolute;
+        top: 8vh;
+        right: 0vw;
+        width: 30vw;
+        height: 92vh;
+        background: midnightblue;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.3s ease-in;
+    }
+    #nav-list li{
+        margin-left: 0;
+        opacity: 0.99;
+    }
+    #mobile-menu{
+        display: block;
+    }
+    
+    #nav-list.active{
+        
+    }
+    
+}
