@@ -2,6 +2,25 @@
     color: aliceblue;
     margin-left: 1%;
 }
+#Text2{
+    color: aliceblue;
+    border-style: none;
+    
+}
+/* BARRA DE ROLAGEM AZUL */
+::-webkit-scrollbar {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: midnightblue;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: midnightblue;
+    border: 0px;
+}
+
 
 #Sobre{
     align-items: center;
@@ -16,7 +35,8 @@ h1{
     border-style: solid;
     border-left: none;
     border-right: none;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px !important;
+
 
 }
 
