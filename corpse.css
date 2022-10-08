@@ -2,3 +2,21 @@
     color: aliceblue;
     margin-left: 1%;
 }
+
+#Sobre{
+    align-items: center;
+}
+
+#Sobre h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#github-stats img{
+    border: 1.5px white;
+    margin-left: 10%;
+}
+
+body{
+    background-color: #161b22;
+}
