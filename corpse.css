@@ -7,14 +7,43 @@
     align-items: center;
 }
 
-#Sobre h1{
+h1{
+    display: block;
     text-align: center;
     font-size: 30px;
+    padding: 10px 0px 10px 0px;
+    border: 2px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0px 10px 0px;
+
 }
 
-#github-stats img{
+#github-stats #img{
     border: 1.5px white;
     margin-left: 10%;
+}
+
+#icon-dev{
+    width: 60px;
+    padding: 3px 5px 3px 0px;
+}
+
+span{
+    display: block;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 0.5px darkred;
+    text-decoration: underline 1px;
+    text-transform: uppercase;
+
+}
+#icones{
+    text-align: center;
 }
 
 body{
