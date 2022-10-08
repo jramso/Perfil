@@ -6,18 +6,23 @@
 a{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: bold;
     transition: 0.3s;
+
 }
 
-a:hover{
+a:hover, #btn-mobile:hover{
     opacity:0.9;
     background: rgba(0, 0, 0, .3);
 }
 
+#btn-mobile:hover{
+    opacity:0.9;
+    background:  mediumblue ;  
+}
 #logo{
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
     margin-left: 1%;
 
 }
@@ -29,13 +34,24 @@ a:hover{
     background-color: midnightblue;
 }
 
+#btn-mobile{
+    display: none;
+}
+
+#btn-mobile div{
+    width: 32px;
+    height: 3px;
+    background: #fff;
+    margin: 8px;
+}
+
 #nav{
     display: flex;
-    font-family:system-ui, Arial, Helvetica, sans-serif;
+    font-family:system-ui, Georgia, 'Times New Roman', Times, serif;
 }
 
 main{
-    background-image: ("tech.jpg") no-repeat center center;
+    background: url("tech.jpg") no-repeat center center;
     opacity: 0.8;
     background-size: cover;
     height: 92vh;
@@ -53,13 +69,21 @@ main{
 #menu li{
     letter-spacing: 3px;
     margin-left: 32px;
+    background-color: rgba(25, 25, 112,0.6);
+    padding: 1vh;
 }
 
 #menu a{
-    display: block;
-    padding: 1rem;
+    display: flex;
+    padding: 1vw;
 }
 
+
+
+/*
+    Menu Mobile
+
+*/
 #mobile-menu{
     display: none;
     cursor:pointer;
@@ -73,32 +97,44 @@ main{
     margin: 8px;
 }
 
-@media (max-width:999px) {
-    body{
-        overflow-x: hidden;
-    }
-    #nav-list{
-        position:absolute;
-        top: 8vh;
-        right: 0vw;
-        width: 30vw;
-        height: 92vh;
-        background: midnightblue;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transition: 0.3s ease-in;
-    }
-    #nav-list li{
-        margin-left: 0;
-        opacity: 0.99;
-    }
-    #mobile-menu{
-        display: block;
-    }
-    
-    #nav-list.active{
-        
-    }
-    
-}
+        @media (max-width:999px) {
+            body{
+                overflow-x: hidden;
+            }
+
+            #btn-mobile{
+                display: block;
+                left: 1vw;
+                padding: 3px;
+                border-radius: 50%;
+                background:rgba(0, 0, 0, 0.3);
+            }
+            
+            #menu{
+                position:absolute;
+                top: 8vh;
+                right: 0vw;
+                width: 100%;
+                height: 30vh;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                z-index: 1000;
+                transform: translateX(100%);
+            }
+            #menu li{
+                margin-left: 0;
+                opacity: 0.99;
+            }
+            #mobile-menu{
+                display: block;
+            }
+            
+            #nav.active #menu{
+                display: block;
+                transform: translate(0%);
+                transition: 0.4s ease-in;
+                overflow-y: auto;
+            }
+            
+        }
