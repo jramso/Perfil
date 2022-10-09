@@ -1,3 +1,11 @@
+/* Import Fonte "Raleway" */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/* Corpo geral */
+body{
+    background-color: #051731;
+    overflow-x: hidden;
+}
+/* Textos */
 #Text{
     color: aliceblue;
     margin-left: 1%;
@@ -7,6 +15,7 @@
     border-style: none;
     
 }
+
 /* BARRA DE ROLAGEM AZUL */
 ::-webkit-scrollbar {
     background-color: #fff;
@@ -21,11 +30,7 @@
     border: 0px;
 }
 
-
-#Sobre{
-    align-items: center;
-}
-
+/* Topicos do menu */
 h1{
     display: block;
     text-align: center;
@@ -40,32 +45,80 @@ h1{
 
 }
 
-#github-stats #img{
-    border: 1.5px white;
-    margin-left: 10%;
+/* Sobre mim */
+#Sobre{
+    align-items: center;
 }
+    #github-stats #img{
+        border: 1.5px white;
+        margin: 10px 0px 0px 10%;
+    }
 
-#icon-dev{
-    width: 60px;
-    padding: 3px 5px 3px 0px;
-}
+    .img-svg{
+        background-color: rgba(48, 52, 101, 0.723);
+        border-radius: 5%;
+        padding: 0px 0px 0px 50px;
+        stroke:rgb(179, 45, 45)
+    }
+    /* Litle Screen */
+    @media (max-width:999px) {
+        .img-svg{
+            padding: 0px 0px 0px 3vw;
+            margin: 10px 0px 0px 10vw !important;
+            width: 55vw;
+        }
 
-span{
-    display: block;
-    font-size: 20px;
-    color: aliceblue;
-    text-align: center;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    -webkit-text-stroke: 0.5px darkred;
-    text-decoration: underline 1px;
-    text-transform: uppercase;
+        
+        #github-stats #img{
+            width: 75vw;
+            margin: 10px 0px 0px 8vw;
+        }
+        
+        h1{
+            font-size: 20px;
+        }
+    }
+    /* Mobile */
+    @media (max-width:450px) {
+        .img-svg{
+            padding: 0px 0px 0px 0px;
+            height: 150px;
+            width: 500px;
+        }
 
-}
-#icones{
-    text-align: center;
-}
+        #github-stats #img{
+            width: 300px;
+            margin: 10px 0px 0px 10px;
+        }
 
-body{
-    background-color: #161b22;
-}
+        h1{
+            font-size: 20px;
+        }
+
+        #icon-dev{
+            width: 15vw !important;
+            padding: 2px 3vw 3px 0px;
+        }
+    }
+    #icon-dev{
+        width: 60px;
+        padding: 3px 3vw 3px 0px;
+    }
+
+    #txt-skills{
+        display: block;
+        font-size: 20px;
+        color: aliceblue;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Raleway", sans-serif;
+        text-decoration: underline 1px;
+        text-underline-position: under;
+        text-transform: uppercase;
+        padding: 2vh 0px 2vh 0px;
+
+    }
+    #icones{
+        text-align: center;
+    }
+
