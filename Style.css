@@ -21,10 +21,16 @@ a{
 
 
 #logo{
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 1%;
+    margin-left: 2%;
+}
 
+#icone{
+    width:50px;
+    margin-right: 1%;
 }
 #header{
     display: flex;
