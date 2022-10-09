@@ -16,6 +16,35 @@ body{
     
 }
 
+
+.frase{
+    margin: 0px 0px 0px 3vw;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+}
+
+.citacao{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    width: 16vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30vh;
+    left: 55vw;
+    border-radius: 10%;
+}
+
+
 /* BARRA DE ROLAGEM AZUL */
 ::-webkit-scrollbar {
     background-color: #fff;
@@ -40,11 +69,29 @@ h1{
     border-style: solid;
     border-left: none;
     border-right: none;
-    margin: 10px 0px 10px 0px !important;
+    margin: 1.5px 0px 10px 0px !important;
 
 
 }
 
+h1:hover{
+    border-radius: 10%;
+    padding-left: 2%;
+}
+
+/* Perfil */
+
+.perfil{
+    border-radius: 50%;
+    width: 15vw;
+    padding: 0px 5px 5px 2vw;
+}
+
+.avatar{
+    position: absolute;
+    width: 5vw;
+    left: 11vw;
+}
 /* Sobre mim */
 #Sobre{
     align-items: center;
@@ -102,7 +149,12 @@ h1{
     }
     #icon-dev{
         width: 60px;
-        padding: 3px 3vw 3px 0px;
+        padding: 3px 0vw 3px 0px;
+        margin: 0px 3vw 0px 0px;
+    }
+
+    #icon-dev:hover{
+        background-color: rgb(192, 239, 255);
     }
 
     #txt-skills{
@@ -120,5 +172,15 @@ h1{
     }
     #icones{
         text-align: center;
+        background-color: rgba(48, 52, 101, 0.6);
     }
+
+/* Meus Projetos */
+
+#Projetos{
+    background: url("tech.jpg") no-repeat center center;
+    opacity: 0.8;
+    background-size: cover;
+    height: 100vh;
+}
 
