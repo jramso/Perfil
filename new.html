@@ -2,33 +2,33 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.mystyle {
-  width: 100%;
-  padding: 25px;
-  background-color: coral;
-  color: white;
-  font-size: 25px;
-  box-sizing: border-box;
-}
-</style>
+<link rel="stylesheet" href="Style.css">
+<link rel="icon" type="image/x-icon" href="JRicon.png">
 </head>
 <body>
+  <header id="header">
+    <a id="logo" href="https://github.com/jramso?tab=repositories"><img id="icone" src="JRicon.png">JRamsoDev</a>
+    <div id="nav">
+        <div id="btn-mobile" >
+            <div  id="line1"></div>
+            <div  id="line2"></div>
+            <div  id="line3"></div>
+        </div>
+        <ul id="menu">
+            <li><a href="#Classes">Início</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+  </header>
+<script src="mob_navbar.js"></script>
 
-<p>Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
 
-<button onclick="myFunction()">Try it</button>
 
 <div id="myDIV">
 This is a DIV element.
 </div>
-
-<script>
-function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-}
-</script>
 
 </body>
 </html>

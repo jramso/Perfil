@@ -75,7 +75,7 @@ h1{
 }
 
 h1:hover{
-    border-radius: 10%;
+    border-radius: 5%;
     padding-left: 2%;
 }
 
@@ -178,9 +178,16 @@ h1:hover{
 /* Meus Projetos */
 
 #Projetos{
-    background: url("tech.jpg") no-repeat center center;
+    background: url("blackWorld.jpg") no-repeat center center;
+    background-color: rgb(64, 61, 208);
     opacity: 0.8;
     background-size: cover;
     height: 100vh;
 }
 
+#pc{
+    display: block;
+    align-items: center;
+    text-align: center;
+    opacity: 0.85;
+}

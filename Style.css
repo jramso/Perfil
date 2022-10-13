@@ -1,6 +1,23 @@
 html{
     scroll-behavior: smooth;
 }
+/* BARRA DE ROLAGEM AZUL */
+::-webkit-scrollbar {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: midnightblue;
+}
+::-webkit-scrollbar-corner {
+    background-color: midnightblue;
+}
+
+::-webkit-scrollbar-thumb :hover{
+    background-color: midnightblue;
+    border: 0px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +48,8 @@ a{
 #icone{
     width:50px;
     margin-right: 1%;
+    padding-right: 10px;
+    border-radius: 25%;
 }
 #header{
     display: flex;
