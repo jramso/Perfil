@@ -100,17 +100,18 @@
         }
 
         .img-svg{
+            display: block;
             border-radius: 5%;
-            padding: 0px 0px 0px 50px;
-            stroke:rgb(179, 45, 45)
+            padding: 0px 2vw 0px 2vw;
+            background-image: linear-gradient(blue,aliceblue,aliceblue,purple);
+            margin-left: 10%;
         }
 
         #icon-dev{
             width: 60px;
-            padding: 3px 0vw 3px 0px;
             margin: 0px 3vw 0px 0px;
             border-radius: 20%;
-            transition: all  .4s ease-in;
+            transition: all  .2s ease-in;
             transition-delay: 0.5s;
         }
         
@@ -140,7 +141,6 @@
 /* Litle Screen */
         @media (max-width:999px) {
             .img-svg{
-                padding: 0px 0px 0px 3vw;
                 margin: 10px 0px 0px 10vw !important;
                 width: 55vw;
             }
@@ -175,7 +175,7 @@
 
         #icon-dev{
             width: 15vw !important; 
-            padding: 2px 3vw 3px 0px;
+            padding: 2px 3px 3px 0px;
         }
     }
     
@@ -183,15 +183,32 @@
     
     #Projetos{
         background: url("blackWorld.jpg") no-repeat center center;
+        width: 100%;
+        height: 1280px;
         background-color: rgb(64, 61, 208);
         opacity: 0.8;
         background-size: cover;
         height: 100vh;
+        text-align: center;
     }
 
     #pc{
-        display: block;
-        align-items: center;
-        text-align: center;
+        background: url(macbook.png) no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        width: 80%;
+        height: 372px;
         opacity: 0.85;
+        left: 10%;
+    }
+
+    @media(max-width:1009px){
+        #pc{
+            background: url(celular.png)no-repeat;
+            background-size: cover !important;
+            position: absolute;
+            left: -5%;
+            overflow: hidden;
+        }
     }
