@@ -207,6 +207,7 @@
         #pc{
             background: url(celular.png)no-repeat;
             background-size: cover !important;
+            width: 80%;
             position: absolute;
             left: -5%;
             overflow: hidden;
