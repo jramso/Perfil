@@ -1,131 +1,162 @@
 /* Import Fonte "Raleway" */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 /* Corpo geral */
-body{
-    background-color: #051731;
-    overflow-x: hidden;
-}
+    body{
+        background-color: #051731;
+        overflow-x: hidden;
+    }
+
 /* Textos */
-#Text{
-    color: aliceblue;
-    margin-left: 1%;
-}
-#Text2{
-    color: aliceblue;
-    border-style: none;
-    
-}
+    #Text{
+        color: aliceblue;
+        margin-left: 1%;
+    }
+    #Text2{
+        color: aliceblue;
+        border-style: none;
+        
+    }
 
 
-.frase{
-    margin: 0px 0px 0px 3vw;
-    display: inline-block;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    width: 50vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10%;
-}
+    .frase{
+        margin: 0px 0px 0px 3vw;
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        width: 50vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 10%;
+    }
 
-.citacao{
-    display: inline-block;
-    position: absolute;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-    width: 16vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 30vh;
-    left: 55vw;
-    border-radius: 10%;
-}
-
-
-/* BARRA DE ROLAGEM AZUL */
-::-webkit-scrollbar {
-    background-color: #fff;
-}
-
-::-webkit-scrollbar-corner {
-    background-color: midnightblue;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: midnightblue;
-    border: 0px;
-}
+    .citacao{
+        display: inline-block;
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        width: 16vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 30vh;
+        left: 55vw;
+        border-radius: 10%;
+    }
 
 /* Topicos do menu */
-h1{
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px 0px 10px 0px;
-    border: 2px;
-    border-style: solid;
-    border-left: none;
-    border-right: none;
-    margin: 1.5px 0px 10px 0px !important;
+    h1{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px 0px 10px 0px;
+        margin: 1.5px 0px 10px 0px !important;
+        text-shadow: 1px 1px red;
 
+    }
 
-}
+    h1:hover{
+        border-radius: 5%;
+        padding-left: 2%;
+    }
 
-h1:hover{
-    border-radius: 5%;
-    padding-left: 2%;
-}
+/* BARRA DE ROLAGEM AZUL SEM SETAS */
+    ::-webkit-scrollbar {
+        background-color: #fff;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: midnightblue;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: midnightblue;
+        border: 0px;
+    }
+
 
 /* Perfil */
 
-.perfil{
-    border-radius: 50%;
-    width: 15vw;
-    padding: 0px 5px 5px 2vw;
-}
-
-.avatar{
-    position: absolute;
-    width: 5vw;
-    left: 11vw;
-}
-/* Sobre mim */
-#Sobre{
-    align-items: center;
-}
-    #github-stats #img{
-        border: 1.5px white;
-        margin: 10px 0px 0px 10%;
-    }
-
-    .img-svg{
-        background-color: rgba(48, 52, 101, 0.723);
-        border-radius: 5%;
-        padding: 0px 0px 0px 50px;
-        stroke:rgb(179, 45, 45)
-    }
-    /* Litle Screen */
-    @media (max-width:999px) {
-        .img-svg{
-            padding: 0px 0px 0px 3vw;
-            margin: 10px 0px 0px 10vw !important;
-            width: 55vw;
+    .perfil{
+            border-radius: 50%;
+            width: 15vw;
+            padding: 0px 5px 5px 2vw;
         }
 
+        .avatar{
+            position: absolute;
+            width: 4.5vw;
+            left: 11vw;
+        }
+/* Sobre mim */
+    #Sobre{
+        align-items: center;
+    }
         
         #github-stats #img{
-            width: 75vw;
-            margin: 10px 0px 0px 8vw;
+            border: 1.5px white;
+            margin: 10px 0px 0px 10%;
+        }
+
+        .img-svg{
+            border-radius: 5%;
+            padding: 0px 0px 0px 50px;
+            stroke:rgb(179, 45, 45)
+        }
+
+        #icon-dev{
+            width: 60px;
+            padding: 3px 0vw 3px 0px;
+            margin: 0px 3vw 0px 0px;
+            border-radius: 20%;
+            transition: all  .4s ease-in;
+            transition-delay: 0.5s;
         }
         
-        h1{
-            font-size: 20px;
+        #icon-dev:hover{
+            background-color: rgba(255, 255, 255, 0.990);            
         }
-    }
-    /* Mobile */
+
+        #txt-skills{
+            display: block;
+            font-size: 20px;
+            color: aliceblue;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Raleway", sans-serif;
+            text-decoration: underline 1px;
+            text-underline-position: under;
+            text-transform: uppercase;
+            padding: 2vh 0px 2vh 0px;
+        
+        }
+        
+        #icones{
+            text-align: center;
+            position: relative;
+            background-image: linear-gradient(rgb(48, 52, 101),black);
+        }
+/* Litle Screen */
+        @media (max-width:999px) {
+            .img-svg{
+                padding: 0px 0px 0px 3vw;
+                margin: 10px 0px 0px 10vw !important;
+                width: 55vw;
+            }
+
+            
+            #github-stats #img{
+                width: 75vw;
+                margin: 10px 0px 0px 8vw;
+            }
+            
+            h1{
+                font-size: 20px;
+            }
+        }
+        
+        /* Mobile */
     @media (max-width:450px) {
         .img-svg{
             padding: 0px 0px 0px 0px;
@@ -143,51 +174,24 @@ h1:hover{
         }
 
         #icon-dev{
-            width: 15vw !important;
+            width: 15vw !important; 
             padding: 2px 3vw 3px 0px;
         }
     }
-    #icon-dev{
-        width: 60px;
-        padding: 3px 0vw 3px 0px;
-        margin: 0px 3vw 0px 0px;
+    
+    /* Meus Projetos */
+    
+    #Projetos{
+        background: url("blackWorld.jpg") no-repeat center center;
+        background-color: rgb(64, 61, 208);
+        opacity: 0.8;
+        background-size: cover;
+        height: 100vh;
     }
 
-    #icon-dev:hover{
-        background-color: rgb(192, 239, 255);
-    }
-
-    #txt-skills{
+    #pc{
         display: block;
-        font-size: 20px;
-        color: aliceblue;
+        align-items: center;
         text-align: center;
-        font-weight: bold;
-        font-family: "Raleway", sans-serif;
-        text-decoration: underline 1px;
-        text-underline-position: under;
-        text-transform: uppercase;
-        padding: 2vh 0px 2vh 0px;
-
+        opacity: 0.85;
     }
-    #icones{
-        text-align: center;
-        background-color: rgba(48, 52, 101, 0.6);
-    }
-
-/* Meus Projetos */
-
-#Projetos{
-    background: url("blackWorld.jpg") no-repeat center center;
-    background-color: rgb(64, 61, 208);
-    opacity: 0.8;
-    background-size: cover;
-    height: 100vh;
-}
-
-#pc{
-    display: block;
-    align-items: center;
-    text-align: center;
-    opacity: 0.85;
-}
